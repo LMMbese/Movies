@@ -1,3 +1,22 @@
 <resources>
-    <string name="app_name">Movies</string>
+    <string name="app_name">Movie</string>
+    <string name="movie_title">Title : %1$s</string>
+    <string name="movie_year">Year : %1$s</string>
+    <string name="movie_rated">Rated : %1$s</string>
+    <string name="movie_released">Released : %1$s</string>
+    <string name="movie_runtime">Runtime : %1$s</string>
+    <string name="movie_genre">Genre : %1$s</string>
+    <string name="movie_director">Director : %1$s</string>
+    <string name="movie_writer">Writer : %1$s</string>
+    <string name="movie_actors">Actors : %1$s</string>
+    <string name="movie_plot">Plot : %1$s</string>
+    <string name="movie_language">Language : %1$s</string>
+    <string name="movie_country">Country : %1$s</string>
+    <string name="movie_awards">Awards : %1$s</string>
+    <string name="movie_production">Production : %1$s</string>
+    <string name="movie_metaScore">MetaScore : %1$s</string>
+    <string name="movie_imdbRating">imdb Rating : %1$s</string>
+    <string name="movie_imdbVotes">imdb Votes : %1$s</string>
+    <string name="movie_type">Type : %1$s</string>
+    <string name="movie_imdbID">imdb ID : %1$s</string>
 </resources>

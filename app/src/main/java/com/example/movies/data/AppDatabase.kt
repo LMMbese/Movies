@@ -1,0 +1,31 @@
+package com.example.movies.data
+
+import android.content.Context
+import androidx.room.Database
+import androidx.room.Room
+import androidx.room.RoomDatabase
+import com.example.movies.movies.data.Movie
+import com.example.movies.movies.data.MovieDao
+
+@Database(entities = [Movie::class], version = 1, exportSchema = false)
+abstract class AppDatabase: RoomDatabase() {
+    abstract fun movieDao(): MovieDao
+
+    companion object{
+        @Volatile
+        private var instance: AppDatabase? = null
+
+        fun getInstance(context: Context): AppDatabase {
+            if (instance == null) {
+                synchronized(AppDatabase::class.java) {
+                    if (instance == null) {
+                        instance = Room.databaseBuilder(
+                            context.applicationContext, AppDatabase::class.java, "movie"
+                        ).build()
+                    }
+                }
+            }
+            return instance!!
+        }
+    }
+}
